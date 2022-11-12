@@ -1,0 +1,24 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.pai {
+    width: 100vw;
+    height: 100vw;
+    background-color: aqua;
+    overflow: hidden;
+}
+p{
+    font-size: 2rem;
+}
+
+.color-one{
+    background: red;
+}
+.color-two{
+    background: violet;
+}
