@@ -27,8 +27,37 @@ body{
     height: 100%;
     background: red;
 }
+
+.edita-links{
+    margin: 0 auto;
+    width: 100vh;
+    height: 100vh;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(149, 101, 101);
+    text-shadow: 2px 2px 2px rgb(149, 101, 101);
+    border: 3px rgb(164, 118, 118) solid;
+    text-align: center;
+}
+
+.bttop { 
+    position: absolute;
+    margin: 0 auto;
+    text-decoration: none;
+    border: 2px black solid;
+    color: rgb(149, 101, 101);
+    text-shadow: 2px 2px 2px rgb(149, 101, 101);
+    font-weight: bold;
+}
+.edita-lorem{
+    margin: 0 auto;
+    background: teal;
+    height: 100vh;
+    width: 100vh;
+}
+
 @media all and (max-width: 568px){
-    .grid .col{
+    .grid .col {
         width: 100%;
     }
 }
@@ -48,19 +77,3 @@ body{
     }
 }
 
-.edita-links{
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(149, 101, 101);
-    text-shadow: 2px 2px 2px rgb(149, 101, 101);
-    border: 3px rgb(164, 118, 118) solid;
-    text-align: center;
-}
-
-.bttop {
-    text-decoration: none;
-    border: 2px black solid;
-    color: rgb(149, 101, 101);
-    text-shadow: 2px 2px 2px rgb(149, 101, 101);
-    font-weight: bold;
-}
