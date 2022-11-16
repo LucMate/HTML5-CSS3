@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 body{
-    background: rgba(170, 255, 245, 0.688);
+    background: rgba(0, 8, 7, 0.526);
 }
 .grid{
     padding: 15px;
@@ -23,9 +23,12 @@ body{
     padding: 15px;
 }
 .grid .col-content{
+    text-align: center;
     width: 100%;
     height: 100%;
-    background: red;
+    background: rgb(2, 248, 133);
+    border-radius: 35px 35px 35px 35px;
+    box-shadow: 5px 5px 15px 5px black;
 }
 
 .edita-links{
@@ -34,26 +37,31 @@ body{
     height: 100vh;
     text-decoration: none;
     font-weight: bold;
-    color: rgb(149, 101, 101);
-    text-shadow: 2px 2px 2px rgb(149, 101, 101);
-    border: 3px rgb(164, 118, 118) solid;
+    color: white;
+    text-shadow: 2px 2px 2px white;
+    border: 3px white solid;
     text-align: center;
+    border-radius: 45px 45px 45px 45px;
 }
 
 .bttop { 
     position: absolute;
     margin: 0 auto;
     text-decoration: none;
-    border: 2px black solid;
-    color: rgb(149, 101, 101);
-    text-shadow: 2px 2px 2px rgb(149, 101, 101);
+    border: 2px white solid;
+    color: white;
+    text-shadow: 2px 2px 2px white;
     font-weight: bold;
+    border-radius: 25px 25px 25px 25px;
 }
 .edita-lorem{
+    text-align: center;
     margin: 0 auto;
     background: teal;
     height: 100vh;
     width: 100vh;
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px black;    
 }
 
 @media all and (max-width: 568px){
