@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: yellow;
+    height: 500px;
+}
+.flex-item{
+    background: red;
+    margin: 10px;
+}
+.flex-item:nth-child(3){
+    font-size: 40px;
+}
