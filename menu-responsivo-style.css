@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk' ;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(60,60,60,1);
+}
+
+nav{
+    width: 100%;
+    padding: 16px 32px;
+    background-color: rgba(50,50,50,1) ;
+}
+nav> .menu-container{
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav >.menu-container>.logotipo{
+    font-size: 32px;
+    color: rgba(255,255,255,1);
+    font-weight: 300;
+}
+
+
+
+nav >.menu-container>.items> ul{
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    transition: 0.5s;
+}
+
+nav >.menu-container>.items> ul > li > a {
+    font-size: 16px;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    transition: 0.5s;
+    border-bottom: 1px solid rgba(255,255,255,0);
+}
+nav >.menu-container>.items> ul> li> a:hover{
+    border-bottom: 1px solid rgba(255,255,255,1);
+}
+
+nav >.menu-container>.items> button{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+    nav >.menu-container>.items> ul{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background-color: rgba(40,40,40,1);
+        width: 70%;
+        height: 100vh;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    nav >.menu-container>.items> ul> li {
+        width: 100%;
+    }
+    nav >.menu-container>.items> ul> li > a{
+        width: 100%;
+        display: inline-block;
+        padding: 16px 32px;
+    }
+    nav >.menu-container>.items> button{
+    display: block;
+    font-size: 16px;
+    color: rgba(255,255,255,1);
+    background-color: transparent;
+    border: 0;
+    }
+}
