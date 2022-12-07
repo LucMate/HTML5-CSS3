@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+div.container{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(245, 73, 73),rgb(229, 177, 81), rgb(242, 79, 242));
+    background-size: 500% 100%;
+    animation-name: degrade;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes degrade{
+    0%{
+        background-position-y: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
