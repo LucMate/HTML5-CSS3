@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    background-color: blueviolet;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+div.setaBaixo{
+    width: 40px;
+    height: 40px;
+    background-image: url(setaDown.png);
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation-name: setaBaixo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes setaBaixo{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 20px;
+    }
+}
