@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    background-color: rgb(194, 193, 193);
+}
+
+header div.galeria{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+
+header div.galeria div.single-galeria{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    margin: 0 5px;
+    transition: width 1s;
+}
+
+header div.galeria div.single-galeria:first-child{
+  width: 35% !important;
+}
+
+header div.galeria:hover div.single-galeria:first-child{
+    width: 20% !important;
+}
+
+header div.galeria div.single-galeria:hover{
+    width: 35%;
+}
+
+header div.galeria div.single-galeria:first-child:hover{
+    width: 35% !important;
+}
+
+header div.galeria div.single-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header div.galeria div.single-galeria div.info{
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 65%, transparent);
+    padding: 16% 8%;
+    bottom: 0;
+}
+header div.galeria div.single-galeria div.info h1{
+    font-size: 26px;
+    color: white;
+}
+
+header div.galeria div.single-galeria div.info p{
+    font-size: 14px;
+    line-height: 28px;
+    color: white;
+}
+
+header div.galeria div.single-galeria div.info a{
+    font-size: 14px;
+    line-height: 28px;
+    color: gold;
+    text-decoration: none;
+}
+
+header div.galeria div.single-galeria div.info a:hover{
+    text-decoration: underline;
+    transition: 0.7s;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 8%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, grey,black);
+  
+}
+
+section p {
+    color: whitesmoke;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+@media screen and (max-width: 764px){
+
+    header div.galeria{
+        width: 100%;
+        height: 70vh;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+    
+    
+    header div.galeria div.single-galeria{
+        min-width: 90% !important;
+    }
+}
