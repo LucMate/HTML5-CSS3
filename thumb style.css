@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk';
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgba(70,70,70,0.8);
+}
+
+section h1 {
+    font-size: 36px;
+    color: white;
+}
+
+section{
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+    font-weight: 400;
+}
+
+section div.formulario{
+    margin: 16px 0;
+    display: flex;
+    gap: 16px;
+}
+
+section div.formulario input{
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    background-color: rgba(80,80,80,0.8);
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    color: chartreuse;
+    transition: 0.5s;
+}
+
+section div.formulario input:hover{
+    background-color: rgba(40,40,40,1);
+}
+
+section div.formulario button{
+    padding: 16px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+section div.info{
+    color: white;
+}
+
+section div.baixar{
+    width: 100%;
+
+}
+
+section div.baixar img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
