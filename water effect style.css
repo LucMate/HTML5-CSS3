@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(55,55,55);
+}
+
+.main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    position: absolute;
+    font-size: 12rem;
+    font-weight: 900;
+}
+
+.main h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(13,118,220);
+}
+
+.main h1:nth-child(2){
+    color: rgb(13,118,220);
+    animation: water 4s linear infinite;
+}
+
+@keyframes water {
+    0%,100%{
+        clip-path: polygon(1% 58%, 12% 54%, 22% 63%, 32% 69%, 45% 71%, 59% 72%, 78% 74%, 93% 74%, 100% 75%, 100% 100%, 0% 100%);
+    }
+50% {
+    clip-path: polygon(0% 70%, 10% 71%, 24% 72%, 38% 73%, 53% 65%, 62% 59%, 75% 53%, 90% 50%, 100% 51%, 100% 100%, 0% 100%);
+}
+}
