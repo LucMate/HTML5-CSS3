@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: palevioletred;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.img{
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all .9s linear;
+}
+
+.img:hover{
+    filter: grayscale(0%);
+}
